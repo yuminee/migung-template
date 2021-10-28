@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv="expires" content="0">
+    <script type="text/javascript">
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+
+
+</head>
+<div class="greenB">
+    <form method="POST" action = "/problem/a3cd5dd1dbbc27111bef14e54e77f3e1">
+        <input type="text" id="input", name="user_answer" style="margin:30px" onfocus="setColor(this.id)"/>
+        <input type="submit" style="position: absolute; left: -9999px"/>
+    </form> 
+    
+
+
+
+</body>
+
+</html>

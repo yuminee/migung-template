@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv="expires" content="0">
+    <script type="text/javascript">
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+
+            function setColor(color){
+             document.getElementById(color).style.color="white";
+            }
+
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</head>
+<body bgcolor='black'>
+<div class="middle">
+    <div class="typing-txt">
+    <ul>
+    <li> 본인 팀의 맞는 제단을 생성해야합니다. 제단을 소환할 주문을 찾아 직접 이동하시오. </li>
+      <li>  4 - Freddie = d</li>
+      <li>  2 - Tyler = y</li>
+      <li>  3 - Lea = a</li>
+      <li>  4-(나이가 가장 어린 사람), 2-(C-level 중 나이가 가장 많은 사람), 3-(여성 멤버)</li>
+     <li>   (Type: 다음 페이지가 없습니다. 스스로 길을 찾아야 합니다. problem/? ) </li>
+ 
+    </ul>
+    </div>
+<div class="typing" style="color:red; font-size:150%;">
+   <ul>
+     <li></li>
+     <li></li>
+     <li></li>
+        <li></li>
+        <li></li>
+     <li></li>
+  
+
+  </ul>
+</div> 
+</div>
+</body>
+</html>

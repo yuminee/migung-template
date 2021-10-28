@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+#input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 3px solid white;
+  }
+
+
+
+body, html {
+    height: 100%;
+}
+.purpleA {
+    background-image : url('/static/images/purpleA.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: purple;
+}
+.purpleB {
+    background-image : url('/static/images/purpleB.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: purple;
+}
+.purpleC {
+    background-image : url('/static/images/purpleC.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: purple;
+}
+.purpleD {
+    background-image : url('/static/images/purpleD.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: purple;
+}
+.purpleE {
+    background-image : url('/static/images/purpleE.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: purple;
+}
+.greenA {
+    background-image : url('/static/images/greenA.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+}
+.greenB {
+    background-image : url('/static/images/greenB.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+}
+.greenC {
+    background-image : url('/static/images/greenC.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+}
+.greenD {
+    background-image : url('/static/images/greenD.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+}
+.greenE {
+    background-image : url('/static/images/greenE.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+}
+.redA {
+    background-image : url('/static/images/redA.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+}
+.redB {
+    background-image : url('/static/images/redB.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+}
+.redC {
+    background-image : url('/static/images/redC.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+}
+.redD {
+    background-image : url('/static/images/redD.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+}
+.redE {
+    background-image : url('/static/images/redE.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+}
+.blueA {
+    background-image : url('/static/images/blueA.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+}
+.blueB {
+    background-image : url('/static/images/blueB.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+}
+.blueC {
+    background-image : url('/static/images/blueC.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+}
+.blueD {
+    background-image : url('/static/images/blueD.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+}
+.blueE {
+    background-image : url('/static/images/blueE.png') ; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+}
+
+.middle {
+/* 이하 필수 설정 */
+position: absolute; left: 50%; top: 50%; 
+transform: translate(-50%, -50%); text-align: center;
+}
+
+@font-face {
+    src : url("/static/font/PyonggyunBKRad.otf"); 
+    font-family: "font1" 
+}
+
+
+
+.typing-txt{display: none;
+   }
+ul{list-style:none;}
+.typing ul li{
+  display:block;
+  font-family: font1;
+  line-height: 160%
+}
+.typing ul li.on {  
+  display: inline-block;
+  animation-name: cursor; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;
+} 
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
+
+.fade-in-box {
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+  }
+  @keyframes fadein {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  @-moz-keyframes fadein { /* Firefox */
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  @-o-keyframes fadein { /* Opera */
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }

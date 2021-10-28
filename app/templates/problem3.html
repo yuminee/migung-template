@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv="expires" content="0">
+    <script type="text/javascript">
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+
+            function setColor(color){
+             document.getElementById(color).style.color="white";
+            }
+
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</head>
+<body bgcolor='black'>
+    <form method="POST" action = "/problem/38fc6694b92e7eaad37c088ed8599377">
+        <input type="text" id="input", name="user_answer" style="margin:30px" onfocus="setColor(this.id)"/>
+        <input type="submit" style="position: absolute; left: -9999px"/>
+    </form>   
+<div class="middle">
+    <div class="typing-txt">
+    <ul>
+    <li> 회사에 도착하니 몇사람이 책상에 엎어져 쓰러져 있다.</li>
+     <li>다들 아침부터 이게 뭐하자는 거야. 어제 아무리 열심히 일을 했다해도 그렇지 아침부터 분위기 축 쳐지게... </li>
+      <li>그런데 이 사람들의 상태가 조금 이상하다. 그냥 자는 것같지는 않은데... </li>
+       <li>혹시 몰라서 코에 손가락을 대 보았는데, 다행히 숨은 쉬는것 같다. </li>
+       <li>그런데 왜 아무리 흔들어도 일어나지 않는거지? 그 순간 옆에 있던 제임스의 폰에 카톡이 울린다. </li>
+    <li>"야, 왜 연락이 안돼?"</li>
+    <li>잠금화면에 보인 메시지는 친구한테 온 카톡인것 같다. </li>
+    <li>이게 단서가 될 수 있을까? 뭐라고 보냈는지 확인해보고 싶은데... 내 폰도 아닌데 확인해도 될까? </li>
+    <li>.</li>
+    <li>.</li>
+    <li>.</li>
+    <li> 1. 아무리 그래도 회사 동료의 폰을 몰래 볼수는 없지. 다른 방법을 찾아보자. </li>
+    <li> 2. 다른 방법을 생각할 겨를이 없다. 일단 폰을 확인한다. </li>
+    <li>(type: 숫자)</li>
+    </ul>
+    </div>
+<div class="typing" style="color:red; font-size:150%;">
+   <ul>
+     <li></li>
+     <li></li>
+     <li></li>
+        <li></li>
+        <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+    <li></li>
+     <li></li>
+     <li></li>
+    <li></li>
+     <li></li>
+     <li></li>
+  
+
+  </ul>
+</div> 
+</div>
+</body>
+</html>

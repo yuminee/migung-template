@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv="expires" content="0">
+    <script type="text/javascript">
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+
+            function setColor(color){
+             document.getElementById(color).style.color="white";
+            }
+
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</head>
+<body bgcolor='black'>
+    <form method="POST" action = "/problem/42dfee3aa6bafe1beb7d128cc8bce485">
+        <input type="text" id="input", name="user_answer" style="margin:30px" onfocus="setColor(this.id)"/>
+        <input type="submit" style="position: absolute; left: -9999px"/>
+    </form>   
+<div class="middle">
+    <div class="typing-txt" >
+
+    <ul>
+    <li> 평범하게 눈을 뜬 오늘, 평소와는 다르게 이상한 느낌이 든다.</li>
+     <li>뭔가 익숙한듯 낯선 기분...  </li>
+      <li>꿈을 꾼것 같기도 하고...  </li>
+       <li>찝찝한 기분이다. 잠은 잘 못잔것 같다. </li>
+     <li>어제 잠을 잘 못잔 탓인가, 어깨가 무겁고 허리도 약간 아프다. </li>
+      <li>기억나지 않는 꿈 때문인지 머리가 지끈지끈 깨질 것 같다.  </li>
+       <li>그런데 지금 몇시지? 설마 늦은건가? </li> 
+    <li> Q. N-inet-wen-tyf-our(Type - hh:mm) </li>
+    </ul>
+  
+    </div>
+<div class="typing" style="color:red; font-size:200%;" >
+   <ul>
+     <li></li>
+     <li></li>
+     <li></li>
+        <li></li>
+     <li></li>
+     <li></li>
+        <li></li>
+     <li></li>
+
+  </ul>
+</div> 
+</div>
+</body>
+</html>

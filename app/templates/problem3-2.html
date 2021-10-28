@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv="expires" content="0">
+    <script type="text/javascript">
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+
+            function setColor(color){
+             document.getElementById(color).style.color="white";
+            }
+
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</head>
+<body bgcolor='black'>
+    <form method="POST" action = "/problem/e0e0aaa7f19ccaf4f49598f3059eaebb">
+        <input type="text" id="input", name="user_answer" style="margin:30px" onfocus="setColor(this.id)"/>
+        <input type="submit" style="position: absolute; left: -9999px"/>
+    </form>   
+<div class="middle">
+    <div class="typing-txt">
+    <ul>
+    <li> 다른 방법을 생각할 겨를이 없다. 일단 폰을 확인한다.   </li>
+     <li>아... 역시 폰이 잠겨있다. 친절하게도 힌트가 적혀있네. 한 번 풀어볼까? </li>
+      <li>문제: XMMIB→ Apple, EF → ✋, XPIBBM → Asleep</li>
+      <li>LMBK → ?  </li>
+       <li>(type: 영어)</li>
+
+    </ul>
+    </div>
+<div class="typing" style="color:red; font-size:150%;">
+   <ul>
+     <li></li>
+     <li></li>
+     <li></li>
+        <li></li>
+        <li></li>
+  </ul>
+</div> 
+</div>
+</body>
+</html>

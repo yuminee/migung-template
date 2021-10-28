@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv="expires" content="0">
+    <script type="text/javascript">
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+
+            function setColor(color){
+             document.getElementById(color).style.color="white";
+            }
+
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</head>
+<body bgcolor='black'>
+    <form method="POST" action = "/problem/30f201743c2b0c886d8cc8b6b29db140">
+        <input type="text" id="input", name="user_answer" style="margin:30px" onfocus="setColor(this.id)"/>
+        <input type="submit" style="position: absolute; left: -9999px"/>
+    </form>   
+<div class="middle">
+    <div class="typing-txt">
+    <ul>
+    <li> 아직은 여유가 있는 시간이다.마침 버스가 왔다. </li>
+     <li>이틀 전 야근하면서 밀렸던 일도 다 마쳤고, 오늘은 타운홀 미팅이 있는 날이니 11시 전까지만 가서 미팅 자료를 준비하면 되겠지. </li>
+      <li>그렇게 여유롭게 준비를 마치고 평소처럼 강남 7번 버스를 타기 위해 정류장으로 향한다. </li>
+       <li>그런데 이 버스... 원래 빨간색이었나? </li>
+    <li>(Type: 한글 3글자) </li>
+    </ul>
+    </div>
+<div class="typing" style="color:red; font-size:150%;">
+   <ul>
+     <li></li>
+     <li></li>
+     <li></li>
+        <li></li>
+     <li></li>
+  
+
+  </ul>
+</div> 
+</div>
+</body>
+</html>

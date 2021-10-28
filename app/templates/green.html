@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv="expires" content="0">
+    <script type="text/javascript">
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+            function setColor(color){
+             document.getElementById(color).style.color="white";
+            }
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body bgcolor='green'>
+    <form method="POST" action = "/problem/bb7aedfa61007447dd6efaf9f37fkdls">
+        <input type="text" id="input", name="user_answer" style="margin:30px" onfocus="setColor(this.id)"/>
+        <input type="submit" style="position: absolute; left: -9999px"/>
+    </form> 
+</body>
+</html>

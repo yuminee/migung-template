@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv="expires" content="0">
+    <script type="text/javascript">
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+
+            function setColor(color){
+             document.getElementById(color).style.color="white";
+            }
+
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</head>
+<body bgcolor='black'>
+    <form method="POST" action = "/problem/6e61aa27e995834984a4bc1c12d254a1">
+        <input type="text" id="input", name="user_answer" style="margin:30px" onfocus="setColor(this.id)"/>
+        <input type="submit" style="position: absolute; left: -9999px"/>
+    </form>   
+<div class="middle">
+    <div class="typing-txt">
+    <ul>
+    <li> 이때 울리는 전화벨 소리 - 딸깍 </li>
+     <li> Eel-Divad (엘 디바드)의 사악한 기운을 물리치기 위해 제단을 준비하고 제를 올려라.</li>
+      <li>내가 누구인지는 궁금해하지 말고. </li>
+      <li>단, 네가 이 저주를 풀 능력이 있는지 시험해야겠다. </li>
+      <li>통화를 끊지 않은 채로 내가 내는 문제를 차례로 맞춰라. </li>
+      <li>필요한 물건이 무엇인지 알려주겠다. 제단은 옥상에 위치한다. </li>
+     <li>명심해라. </li>
+     <li>신성한 제단 앞에 갈때는 단 한명만이 갈 수 있다. </li>
+ <li>또한 그 어떠한 전자기기도 가지고 가서는 안된다. </li>
+ 
+    </ul>
+    </div>
+<div class="typing" style="color:red; font-size:150%;">
+   <ul>
+     <li></li>
+     <li></li>
+     <li></li>
+        <li></li>
+        <li></li>
+     <li></li>
+             <li></li>
+        <li></li>
+     <li></li>
+
+  </ul>
+</div> 
+</div>
+</body>
+</html>
