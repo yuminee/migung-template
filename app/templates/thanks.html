@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv="expires" content="0">
+    <script type="text/javascript">
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+
+            function setColor(color){
+             document.getElementById(color).style.color="white";
+            }
+
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</head>
+<body bgcolor='black'> 
+<div class="middle">
+    <div class="typing-txt" >
+
+    <ul>
+       <li>The End</li>
+        <li>Planning: Tyler, Lea, Freddie</li>
+        <li>Story: Tyler </li> 
+        <li>Development: Lea</li>
+        <li>Design: Freddie </li>
+        <li>Thank you for saving Asleep ! </li>
+    </ul>
+  
+    </div>
+<div class="typing" style="color:red; font-size:200%;" >
+   <ul>
+     <li></li>
+     <li></li>
+     <li></li>
+        <li></li>
+     <li></li>
+     <li></li>
+    
+
+  </ul>
+</div> 
+</div>
+</body>
+</html>

@@ -11,14 +11,14 @@
             setTimeout("disableBack()", 0);
             window.onunload = function () { null };
             function setColor(color){
-             document.getElementById(color).style.color="white";
+             document.getElementById(color).style.color="#f303f4";
             }
     </script>
     <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
 </head>
 <body bgcolor='blue'>
     <form method="POST" action = "/problem/48d6215903dff56238e52e8891380c8f">
-        <input type="text" id="input", name="user_answer" style="margin:30px" onfocus="setColor(this.id)"/>
+        <input type="text" id="input", name="user_answer" style="margin:30px;  border-bottom: 3px solid #f303f4; " onfocus="setColor(this.id)"/>
         <input type="submit" style="position: absolute; left: -9999px"/>
     </form> 
 </body>

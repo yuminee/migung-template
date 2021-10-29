@@ -10,6 +10,9 @@
             function disableBack() { window.history.forward(); }
             setTimeout("disableBack()", 0);
             window.onunload = function () { null };
+            function setColor(color){
+             document.getElementById(color).style.color="#f303f4";
+            }
     </script>
     <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
 
@@ -17,7 +20,7 @@
 </head>
 <div class="blueA">
     <form method="POST" action = "/problem/4a8ec8f6625ee368636427345593f58c">
-        <input type="text" id="input", name="user_answer" style="margin:30px" onfocus="setColor(this.id)"/>
+        <input type="text" id="input", name="user_answer" style="margin:30px; border-bottom: 3px solid #f303f4" onfocus="setColor(this.id)"/>
         <input type="submit" style="position: absolute; left: -9999px"/>
     </form> 
     

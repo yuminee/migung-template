@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv='refresh' content='11;url=http://192.168.0.35:8000/ending3'>
+    <script type="text/javascript">
+    $(document).ready(function(e) {
+    var refresher = setInterval("update_content();",1500); // 30 seconds
+        })
+
+        function update_content(){
+
+            $.ajax({
+            type: "GET",
+            url: "http://192.168.0.35:8000/ending3", // post it back to itself - use relative path or consistent www. or non-www. to avoid cross domain security issues
+            cache: false, // be sure not to cache results
+            })
+            .done(function( page_html ) {
+                alert("LOADED");
+            var newDoc = document.open("text/html", "replace");
+            newDoc.write(page_html);
+            newDoc.close();
+
+            });   
+
+        }
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+
+            function setColor(color){
+             document.getElementById(color).style.color="white";
+            }
+
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</head>
+<body bgcolor='black'>  
+    <div class="side" style="color:red; font-size:150%; font-family: font2;">
+        When the smoke subsides, my colleagues slowly get up...<br><br>
+        People don't seem to remember anything.<br><br>
+        People who are joking around and laughing as usual.<br><br>
+    </div> 
+<div class="middle">
+    <div class="typing-txt">
+    <ul>
+        <li>연기가 잦아들 때 쯤, 서서히 일어나는 동료들...</li>
+        <li>사람들은 아무 기억도 하지 못하는 것 같다.</li>
+         <li>평소처럼 장난치고 웃고 있는 사람들. </li>
+    </ul>
+    </div>
+<div class="typing" style="color:red; font-size:200%;">
+   <ul>
+        <li></li>
+        <li></li>
+     <li></li>
+    
+
+  </ul>
+</div> 
+</div>
+</body>
+</html>

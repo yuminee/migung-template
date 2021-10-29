@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>problem</title>
+    <meta http-equiv='refresh' content='5;url=http://192.168.0.35:8000/ending4'>
+    <script type="text/javascript">
+    $(document).ready(function(e) {
+    var refresher = setInterval("update_content();",1000); // 30 seconds
+        })
+
+        function update_content(){
+
+            $.ajax({
+            type: "GET",
+            url: "http://192.168.0.35:8000/ending4", // post it back to itself - use relative path or consistent www. or non-www. to avoid cross domain security issues
+            cache: false, // be sure not to cache results
+            })
+            .done(function( page_html ) {
+                alert("LOADED");
+            var newDoc = document.open("text/html", "replace");
+            newDoc.write(page_html);
+            newDoc.close();
+
+            });   
+
+        }
+            function disableBack() { window.history.forward(); }
+            setTimeout("disableBack()", 0);
+            window.onunload = function () { null };
+
+            function setColor(color){
+             document.getElementById(color).style.color="white";
+            }
+
+    </script>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</head>
+<body bgcolor='black'>
+    <div class="side" style="color:red; font-size:150%; font-family: font2;">
+        My colleagues will remember today as just a normal Halloween day.<br><br>
+    </div> 
+<div class="middle">
+    <div class="typing-txt">
+    <ul>
+        <li>동료들은 오늘 그저 평범한 할로윈데이로 기억하겠지. </li>
+    </ul>
+    </div>
+<div class="typing" style="color:red; font-size:200%;">
+   <ul>
+        <li></li>
+        <li></li>
+    
+
+  </ul>
+</div> 
+</div>
+</body>
+</html>

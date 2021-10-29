@@ -4,8 +4,9 @@
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid red;
   }
+
 
 
 
@@ -18,7 +19,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: purple;
+    background-color: #6f16fd;
 }
 .purpleB {
     background-image : url('/static/images/purpleB.png') ; 
@@ -26,7 +27,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: purple;
+    background-color: #6f16fd;
 }
 .purpleC {
     background-image : url('/static/images/purpleC.png') ; 
@@ -34,7 +35,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: purple;
+    background-color:#6f16fd;
 }
 .purpleD {
     background-image : url('/static/images/purpleD.png') ; 
@@ -42,7 +43,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: purple;
+    background-color: #6f16fd;
 }
 .purpleE {
     background-image : url('/static/images/purpleE.png') ; 
@@ -50,7 +51,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: purple;
+    background-color: #6f16fd;
 }
 .greenA {
     background-image : url('/static/images/greenA.png') ; 
@@ -179,9 +180,20 @@ position: absolute; left: 50%; top: 50%;
 transform: translate(-50%, -50%); text-align: center;
 }
 
+.side {
+    position: absolute; left: 80%; top: 45%; 
+    transform: translate(-50%, -50%); text-align: center;
+    font-family: "font2";
+    line-height: 90%
+    }
+
 @font-face {
     src : url("/static/font/PyonggyunBKRad.otf"); 
     font-family: "font1" 
+}
+@font-face {
+    src : url("/static/font/Manege_Demo_Light 2.otf"); 
+    font-family: "font2"  
 }
 
 
@@ -192,7 +204,7 @@ ul{list-style:none;}
 .typing ul li{
   display:block;
   font-family: font1;
-  line-height: 160%
+  line-height: 200%
 }
 .typing ul li.on {  
   display: inline-block;
@@ -207,10 +219,10 @@ ul{list-style:none;}
 }
 
 .fade-in-box {
-    animation: fadein 5s;
-    -moz-animation: fadein 5s; /* Firefox */
-    -webkit-animation: fadein 5s; /* Safari and Chrome */
-    -o-animation: fadein 5s; /* Opera */
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
   }
   @keyframes fadein {
       from {
